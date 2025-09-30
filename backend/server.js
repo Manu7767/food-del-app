@@ -10,7 +10,7 @@ const app = express();
 // ✅ CORS setup (Frontend port: 5173, Backend port: 5000)
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173","https://food-del-app-three.vercel.app/"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
